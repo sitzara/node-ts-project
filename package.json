@@ -1,0 +1,29 @@
+{
+  "name": "ts-user-api-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build-ts": "npx tsc",
+    "start": "npm run server",
+    "server": "node dist/index.js",
+    "watch-node": "nodemon dist/index.js",
+    "watch-ts": "npx tsc -w",
+    "lint": "npx tsc --noEmit && npx eslint \"*/**/*.{js,ts}\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "nodemon": "^1.19.1",
+    "tslint": "^5.18.0",
+    "typescript": "^3.5.3"
+  },
+  "devDependencies": {
+    "@types/jest": "^24.0.15",
+    "@typescript-eslint/eslint-plugin": "^1.13.0",
+    "@typescript-eslint/parser": "^1.13.0",
+    "eslint": "^6.1.0",
+    "jest": "^24.8.0",
+    "ts-jest": "^24.0.2"
+  }
+}
